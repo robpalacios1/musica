@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<h1>Agregar Artista</h1>
+			<%= form_for @artist do |f| %>
+			<div class="form-group">
+				<%= f.text_field :name, class: "form-control input-lg", placeholder: "Ingresa nombre del Artista" %>
+			</div>
+			<div class="form-group">
+				<%= f.url_field :url, class: "form-control input-lg", placeholder: "Ingresa URL del Artista" %>
+			</div>
+			<div class="form-group">
+                 <%= f.text_area :description, class: "form-control input-lg", placeholder: "Ingresa la descripción del artista" %>
+            </div>
+			<%= f.submit "Publicar Artista", class: "btn btn-primary btn-lg btn-block" %>
+			<% end %>
+		</div>
+	</div>
+</div>
